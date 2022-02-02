@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=OpenSans');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #222;
+	padding-bottom: 50px;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* Nav */
+
+.hero {
+	background-image: url(./bg.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	/* because we want to overlay it */
+	position: relative;
+	margin-bottom: 20px;
+	z-index: -2;
+}
+/* overlay for giving dark tone to background image*/
+.hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: -1;
+}
+/* headings */
+.hero h1 {
+	font-size: 46px;
+	margin: -20px 0 20px;
+}
+.hero p {
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.content h2,
+.content h3 {
+	font-size: 150%;
+	margin: 20px 0;
+}
+.content p {
+	color: #555;
+	line-height: 30px;
+	letter-spacing: 1.2px;
+}
