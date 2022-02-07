@@ -19,22 +19,36 @@ h1 {
 	color: white;
 	overflow: hidden;
 	left: 50%;
-	top: 20%;
+	top: 10%;
 	position: absolute;
 	/* to put h1 in the middle */
 	transform: translateX(-50%);
 	/* not to put h1 in double or tripple lines, just to put in one line used this property of whitesspace */
 	white-space: nowrap;
 }
+.home {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	padding: 1rem;
+	cursor: pointer;
+	font-size: 3rem;
+}
+.home:hover {
+	background-color: white;
+	color: #333;
+}
 .btn {
 	position: absolute;
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	left: 50%;
-	top: 40%;
+	top: 20%;
 
 	transform: translateX(-50%);
 
