@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	height: 100vh;
+	overflow: hidden;
+}
+h1 {
+	font-size: 4rem;
+	color: white;
+	overflow: hidden;
+	left: 50%;
+	top: 20%;
+	position: absolute;
+	/* to put h1 in the middle */
+	transform: translateX(-50%);
+	/* not to put h1 in double or tripple lines, just to put in one line used this property of whitesspace */
+	white-space: nowrap;
+}
+.btn {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 50%;
+	top: 40%;
+	transform: translateX(-50%);
+	text-decoration: none;
+	color: white;
+	border: white solid 0.2rem;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 15rem;
+	padding: 1.5rem;
+}
+.split.left .btn:hover {
+	background-color: rgb(208, 236, 84);
+	border-color: (rgb(208, 236, 84));
+}
+.split.right .btn:hover {
+	background-color: rgb(187, 77, 27);
+	border-color: rgb(187, 77, 27);
+}
+.container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+}
+.split {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+}
+.split.left {
+	left: 0;
+	background: url(./1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.split.left::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(7, 6, 6, 0.7);
+}
+.split.right {
+	right: 0;
+	background: url(./2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-color: rgba(226, 236, 84, 0.8); */
+}
+.split.right::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(109, 28, 5, 0.8);
+}
