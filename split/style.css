@@ -130,6 +130,23 @@ h1 {
 .hover-right .left {
 	width: var(--other-width);
 }
+.lambo {
+	/* background-color: purple; */
+	background-image: url(./1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	background-position: 35% 65%;
+}
+.buggati {
+	background-image: url(./2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	background-position: 35% 65%;
+}
 
 @media (max-width: 800px) {
 	h1 {
