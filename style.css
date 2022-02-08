@@ -4,7 +4,9 @@
 	padding: 0;
 }
 body {
-	background-color: rgb(198, 50, 198);
+	background: url(./bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -13,7 +15,7 @@ body {
 	font-family: sans-serif;
 }
 .container {
-	background-color: rgb(232, 138, 224);
+	background-color: rgba(94, 199, 199, 0.544);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -21,7 +23,11 @@ body {
 	width: 50%;
 }
 h1 {
+	margin: 1rem;
 	padding: 10px;
+}
+ol {
+	margin: 2rem;
 }
 li a {
 	text-decoration: none;
