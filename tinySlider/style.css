@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,:wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+#slider {
+	height: 500px;
+	/* border: 1px solid #000; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container {
+	width: 1600px;
+	margin: auto;
+}
+.subcontainer {
+	width: 85%;
+	margin: auto;
+}
+h2,
+h3 {
+	text-align: center;
+	color: rgb(0, 255, 255);
+}
+.slide-img {
+	width: 100%;
+	height: 275px;
+	border-radius: 5px;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+.slide-img:hover {
+	box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+.slide-img h2 {
+	opacity: 0;
+	transform: scale(0);
+	transition: 0.8s;
+	font-size: 1.5rem;
+	color: #333;
+}
+.slide-img:hover h2 {
+	opacity: 1;
+	transform: scale(1);
+}
+.img-1 {
+	background-image: url(./images/1.jpg);
+}
+.img-2 {
+	background-image: url(./images/2.jpg);
+}
+.img-3 {
+	background-image: url(./images/3.jpg);
+}
+.img-4 {
+	background-image: url(./images/4.jpg);
+}
+.img-5 {
+	background-image: url(./images/5.jpg);
+}
+.img-6 {
+	background-image: url(./images/6.jpg);
+}
+.home {
+	padding: 2rem;
+	text-align: center;
+}
+.home a {
+	text-decoration: none;
+	color: rgb(0, 255, 255);
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+.home a:hover {
+	color: rgb(0, 255, 255);
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.home a:active,
+.home a:focus {
+	color: rgb(0, 255, 255);
+	text-decoration: none;
+}
+
+@media (max-width: 1600px) {
+	.container {
+		width: 100%;
+	}
+}
