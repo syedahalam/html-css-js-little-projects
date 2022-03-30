@@ -41,10 +41,13 @@ body {
 }
 .slider {
 	position: relative;
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	transform-style: preserve-3d;
 	animation: rotate 30s linear infinite;
+}
+.slider:hover {
+	animation-play-state: paused;
 }
 @keyframes rotate {
 	0% {
@@ -62,7 +65,7 @@ body {
 	height: 100%;
 	transform-origin: center;
 	transform-style: preserve-3d;
-	transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+	transform: rotateY(calc(var(--i) * 45deg)) translateZ(450px);
 }
 .slider span img {
 	position: absolute;

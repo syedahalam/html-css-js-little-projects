@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+	font-family: 'Ubuntu', sans-serif;
+	line-height: 180%;
+	color: #666;
+	text-align: center;
+}
+.home {
+	padding: 1rem;
+	color: blue;
+}
+.home a {
+	text-decoration: none;
+	color: rgb(0, 157, 255);
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+.home a:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.home a:active,
+.home a:focus {
+	color: #fff;
+	text-decoration: none;
+}
